@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html, body {
+    height: 100%; /* Pastikan body mencakup seluruh tinggi halaman */
+}
+
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: 0;
+}
+
+
+/* Latar belakang untuk halaman index.php */
+.index-page {
+    background-image: url('indek.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Latar belakang untuk halaman login.php */
+.login-page {
+    background-image: url('login.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Latar belakang untuk halaman register.php */
+.register-page {
+    background-image: url('regis.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Latar belakang untuk halaman welcome.php */
+.welcome-page {
+    background-image: url('welcome.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.menu-container {
+    text-align: center;
+    background-color: rgba(94, 57, 16, 0.603);
+    padding: 40px;
+    border-radius: 20%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-buttons {
+    margin-top: 20px;
+    text-justify: auto;
+}
+
+.menu-buttons .button {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Pusatkan konten secara vertikal dan horizontal */
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #5cb85c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    height: 50px; /* Berikan ketinggian tombol untuk memastikan teks tetap di tengah */
+}
+
+.menu-buttons .button:hover {
+    background-color: #5a480d;
+}
+
+.form-container {
+    background-color: rgba(35, 111, 224, 0.589);
+    width: 350px;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(192, 133, 7, 0.418);
+    text-align: center;
+    position: relative;
+    margin: 100px auto;
+}
+
+.user-icon {
+    width: 90px;
+    height: 90px;
+    background-color: #e94615; /* Sesuai dengan gambar */
+    border-radius: 50%;
+    position: relative;
+    margin: 0 auto 20px auto; /* Agar berada di tengah dan berjarak dengan form */
+    overflow: hidden; /* Ini akan memastikan bagian tubuh tidak keluar dari lingkaran */
+}
+
+.user-icon::before {
+    content: '';
+    position: absolute;
+    top: 40%; /* Posisikan bagian kepala lebih ke atas */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    background-color: #fff; /* Kepala berwarna putih */
+    border-radius: 50%; /* Membentuk lingkaran untuk kepala */
+}
+
+.user-icon::after {
+    content: '';
+    position: absolute;
+    top: 70%; /* Turunkan untuk tubuh, lebih kecil */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 20px;
+    background-color: #fff; /* Warna tubuh putih */
+    border-radius: 55px 55px 10% 10%; /* Membentuk setengah lingkaran untuk tubuh */
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    background-color: #f3f3f3;
+    font-size: 14px;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #900fdb;
+}
+
+.welcome-container {
+    background-color: rgba(248, 204, 8, 0.589);
+    width: 350px;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(230, 68, 4, 0.418);
+    text-align: center;
+    position: relative;
+    margin: 100px auto;
+}
+
+.welcome-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.welcome-container button:hover {
+    background-color: #ce9c11;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+}
+
+.success {
+    color: rgb(29, 252, 0);
+    font-size: 0.9em;
+}
+
+.form-container a {
+    font-size: larger;
+    color:    #b8d60bbb;
+    text-shadow: 0 0 10px #0bd615bb;
+    text-decoration: none;
+}
+
+.form-container a:hover {
+    text-decoration: underline;
+    text-shadow:    0 0 5px #fff,
+                    0 0 10px #fff, 
+                    0 0 20px #0026ff, 
+                    0 0 20px #0059ff, 
+                    0 0 40px #00a2ff;
+                  
+}
